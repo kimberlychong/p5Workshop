@@ -1,83 +1,103 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/custom.css">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img class="logo" src="assets/p5-logo.svg" alt="p5.js-logo">
+				<h1>P5.JS Workshop</h1>
+				<p>Learn to code with p5.js</p>
+			</section>
+			<section>
 				<section>
-					<img id="logo" src="assets/p5-logo.svg" alt="p5.js-logo">
-					<h1>P5.JS Workshop</h1>
-					Learn to code with p5.js
+					<h2>The Basics</h2>
 				</section>
 				<section>
-					<section>
-						<h2>The Basics</h2>
-					</section>
-					<section>
-						<p><b>Programming/Coding:</b> Act of writing instructions for the computer to perform various tasks.</p>
-					</section>
-					<section>
-						<p><b>Syntax:</b> Rules that specify the correct combined sequence of symbols that form a structured proram using a programming language.</p>
-					</section>
-					<section>
-						<p><b>Programming Language:</b> Set of commands, instructions, and other syntax used to create a software program.</p>
-					</section>
-					<section>
-						<p>Today we'll learn how to instruct the computer to create images!</p>
-					</section>
+					<p><b>Programming/Coding:</b> Act of writing instructions for the computer to perform various tasks.
+					</p>
+					<!-- Eg: Write instructions to someone on how to complete a certain task, like create a peanut butter sandwhich. -->
 				</section>
 				<section>
-					<section>
-						<h2>What is JavaScript?</h2>
-					</section>
-					<section>
-
-					</section>
-
+					<p><b>Programming Language:</b> Set of commands, rules, or syntax for instructing a computer to
+						perform specific tasks.</p>
+					<!-- Eg: Using the English language to write the instructions. -->
 				</section>
 				<section>
+					<p><b>Syntax:</b> Rules that specify the correct combined sequence of symbols that form a structured
+						proram using a programming language.</p>
+					<!-- Eg: English language has its own set of grammar rules, such as spelling, punctuation, sentence structure, etc. -->
+				</section>
+				<section>
+					<p>Today we'll learn how to instruct the computer to create images!</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<img class="logo" src="assets/javascript-logo.svg" alt="js-logo">
+					<h2>What is JavaScript?</h2>
+				</section>
+				<section>
+					<p>JavaScript is among the most powerful and flexible programming languages of the web. It is also
+						one of the core technologies of the web, along with HTML and CSS. It powers the dynamic behavior
+						on most websites.</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<img class="logo" src="assets/p5-logo.svg" alt="p5.js-logo">
 					<h2>What is p5.js?</h2>
 				</section>
-				<section>Activity 1: Draw a circle</section>
-			</div>
+				<section>
+					p5.js is a JavaScript library, collection of predefined commands and logic, with a full set of drawing functionality.
+				</section>
+				<section data-background-iframe="https://p5js.org/reference/" data-background-interactive>
+					<a style="position:relative;bottom:250px;background-color: rgba(255, 255, 255, 100)">p5js.org/reference</a>
+				</section>
+			</section>
+			<section>Activity 1: Draw a circle</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
 </html>
