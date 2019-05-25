@@ -32,6 +32,7 @@
 				<img class="logo" src="assets/p5-logo.svg" alt="p5.js-logo">
 				<h1>P5.JS Workshop</h1>
 				<p>Learn to code with p5.js</p>
+				<a href="https://tinyurl.com/p5jscodeday">tinyurl.com/p5jscodeday</a>
 			</section>
 			<section>
 				<section>
@@ -73,13 +74,118 @@
 					<h2>What is p5.js?</h2>
 				</section>
 				<section>
-					p5.js is a JavaScript library, collection of predefined commands and logic, with a full set of drawing functionality.
+					p5.js is a JavaScript library, collection of predefined commands and logic, with a full set of
+					drawing functionality.
 				</section>
 				<section data-background-iframe="https://p5js.org/reference/" data-background-interactive>
-					<a style="position:relative;bottom:250px;background-color: rgba(255, 255, 255, 100)">p5js.org/reference</a>
+					<a
+						style="position:relative;bottom:250px;background-color: rgba(255, 255, 255, 100)">p5js.org/reference</a>
+				</section>
+				<section>
+					<h3>Let's Explore the Web Editor</h3>
+					<a href="https://editor.p5js.org/">https://editor.p5js.org/</a>
+					<!-- code, preview, console & errors, run & stop button, auto-refresh option, sign-up/login, save -->
 				</section>
 			</section>
-			<section>Activity 1: Draw a circle</section>
+			<section>
+				<section>
+					<h2>Activity 1: Draw a Circle</h2>
+					<!-- functions, arguments, comments -->
+				</section>
+				<section>
+					<pre><code data-trim data-noescape data-line-numbers>
+						// called once
+						function setup() {
+							createCanvas(400, 400);
+						}
+						
+						// repeatedly called
+						function draw() {
+							background(220);
+							fill(0);
+							circle(25, 25, 50);
+						}
+
+						// fill colors
+						// red - fill(255,0,0);
+						// green - fill(0, 255, 0);
+						// blue - fill(0, 0, 255);
+						// black - fill(0);
+						// white - fill(255);
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Activity 2: Move the Circle</h2>
+					<!-- variables, assignment, arithmetic operations -->
+				</section>
+				<section>
+					<pre><code data-trim data-noescape data-line-numbers>
+						let x = 1;
+
+						function setup() {
+							createCanvas(400, 400);
+						}
+						
+						function draw() {
+							background(220);
+							fill(0);
+							circle(x, 25, 50);
+							x = x + 1;
+							print(x);
+						}
+						</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Activity 3: Bouncing Ball</h2>
+					<!-- if-statements -->
+				</section>
+				<section>
+					<section>
+						<pre><code data-trim data-noescape data-line-numbers>
+							let x = 1;
+							let direction = 1;
+							
+							function setup() {
+								createCanvas(400, 400);
+							}
+							
+							function draw() {
+								background(220);
+								fill(0);
+								print(x);
+								circle(x, 25, 50);
+								
+								x = x + direction;
+								
+								if (x > width || x < 0) {
+								direction = direction * -1;
+								}
+							}
+						</code></pre>
+					</section>
+				</section>
+			</section>
+			</section>
+			<section>
+				<h2>Program Ideas</h2>
+				<li>Pong game</li>
+				<li>Change shape on click</li>
+				<li>Change shape color on click</li>
+				<li>Create a pattern with repeating shapes, lines, color</li>
+			</section>
+			<section>
+				<h2>Learning Resources</h2>
+				<a href="https://p5js.org/reference/">https://p5js.org/reference/</a><br>
+				<a href="https://p5js.org/examples/">https://p5js.org/examples/</a><br>
+				<a href="https://editor.p5js.org/">https://editor.p5js.org/</a><br>
+				<a href="https://thecodingtrain.com/">https://thecodingtrain.com/</a><br>
+				<a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA">YouTube Playlist -
+					"Code! Programming with p5.js"</a>
+			</section>
 		</div>
 	</div>
 
@@ -94,7 +200,7 @@
 				{ src: 'plugin/markdown/marked.js' },
 				{ src: 'plugin/markdown/markdown.js' },
 				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true }
+				{ src: 'plugin/highlight/highlight.js', async: true },
 			]
 		});
 	</script>
